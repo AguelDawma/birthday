@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#080006">
+<title>For Mothwaka ♡</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="hearts"></div>
+<audio id="music" loop preload="auto"><source src="assets/birthday-music.mp3" type="audio/mpeg"></audio>
+
+<main class="app">
+  <section id="loading" class="screen active">
+    <div class="loader-heart">♡</div>
+    <h1>Loading something special...</h1>
+    <div class="progress"><span></span></div>
+    <p>JUST FOR YOU ♡</p>
+  </section>
+
+  <section id="lock" class="screen">
+    <div class="lock-card">
+      <div class="avatar"><img src="assets/memory-1.jpg" alt="Ntsoaki"></div>
+      <div class="tiny">PRIVATE</div>
+      <h2>LOCKED</h2>
+      <p>First Day We Kissed?</p>
+      <button class="photo-hint" id="hint">♡</button>
+      <div class="dots" id="dots">••••••</div>
+      <div class="keypad">
+        <button data-key="1">1</button><button data-key="2">2</button><button data-key="3">3</button>
+        <button data-key="4">4</button><button data-key="5">5</button><button data-key="6">6</button>
+        <button data-key="7">7</button><button data-key="8">8</button><button data-key="9">9</button>
+        <button data-key="back">⌫</button><button data-key="0">0</button><button data-key="clear">C</button>
+      </div>
+      <p class="hint">Unlimited Attempts Left, Exact Amount of Love I have For You</p>
+    </div>
+  </section>
+
+  <section id="home" class="screen">
+    <div class="hero">
+      <div class="sparkle">✦</div>
+      <p class="eyebrow">A LITTLE SOMETHING FOR</p>
+      <h1>Ntsoaki<br><span>Lengeta</span></h1>
+      <p class="date">02 · 10 · 2006</p>
+      <div class="cake">🎂</div>
+      <h2>Happy Birthday Love ♡</h2>
+      <p class="lead">Today is about celebrating the beautiful person you are.</p>
+      <button class="primary" id="openMemories">Wanna See My Favourite Person?<span>→</span></button>
+    </div>
+  </section>
+
+  <section id="memories" class="screen scroll">
+    <div class="page-head">
+      <p class="eyebrow">OUR LITTLE GALLERY</p>
+      <h1>MON COEUR ('MaSekhonyana)</h1>
+      <p>All These People Look Just like My Heart's Captain ♡</p>
+    </div>
+    <div class="gallery">
+      <figure><img src="assets/memory-1.jpg"><figcaption>Beautiful Trouble.</figcaption></figure>
+      <figure><img src="assets/memory-2.jpg"><figcaption>Simply gorgeous.</figcaption></figure>
+      <figure><img src="assets/memory-3.jpg"><figcaption>Pure Elegance.</figcaption></figure>
+      <figure><img src="assets/memory-4.jpg"><figcaption>My favourite face,</figcaption></figure>
+      <figure><img src="assets/memory-5.jpg"><figcaption>My Obsession.</figcaption></figure>
+      <figure><img src="assets/memory-6.jpg"><figcaption>That smile ♡</figcaption></figure>
+      <figure><img src="assets/memory-7.jpg"><figcaption>Another one for my heart.</figcaption></figure>
+      <figure><img src="assets/memory-8.jpg"><figcaption>Forever a favourite.</figcaption></figure>
+    </div>
+    <button class="primary" id="messageBtn">Touch This ♡</button>
+  </section>
+
+  <section id="counter" class="screen">
+    <div class="counter-card">
+      <p class="eyebrow">SINCE THE DAY YOU ARRIVED</p>
+      <h1>20 years of being<br><span>you.</span></h1>
+      <div class="numbers">
+        <div><b id="years">20</b><small>YEARS</small></div>
+        <div><b id="days">—</b><small>DAYS</small></div>
+        <div><b id="hours">—</b><small>HOURS</small></div>
+      </div>
+      <p>And somehow you keep getting more beautiful. ♡</p>
+      <button class="primary" id="counterNext">Can I Tell You Something? →</button>
+    </div>
+  </section>
+
+  <div id="modal" class="modal">
+    <div class="letter">
+      <button class="close" id="close">×</button>
+      <p class="eyebrow">JUST FOR YOU ✦</p>
+      <h2>Joyeux Anniversaire Mon Amour <span>♥</span></h2>
+      <div class="letter-body">
+        <p>Ntsoaki,</p>
+        <p>Happy 20th birthday to the girl who makes ordinary moments feel special. I hope today reminds you just how loved, appreciated and precious you are.</p>
+        <p>You have a beautiful way of being yourself, and honestly, that's one of the things I love most about you. Your smile, your little expressions, your craziness and all those tiny things that make you <em>you</em>... I wouldn't trade them for anything.</p>
+        <p>As you step into another year, I wish you peace, happiness, success and countless reasons to smile. May this chapter be softer, brighter and full of beautiful memories.</p>
+        <p>Keep being the amazing woman you are. And never forget that there is someone here who is incredibly grateful to have you, That's Me!... Nna Kea ipuelella ake tsebe babang... I love you so so so so so so so so so much. ♡</p>
+        <p class="signature">With all my love,<br><strong>Me ♥</strong></p>
+      </div>
+      <div class="letter-actions">
+        <button class="primary" id="celebrate">CELEBRATE ✦</button>
+        <button class="secondary" id="restart">RESTART ↻</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="musicToggle" class="music">♫</div>
+  <div class="nav" id="nav">
+    <button data-page="home">♡</button>
+    <button data-page="memories">▦</button>
+    <button data-page="counter">∞</button>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
